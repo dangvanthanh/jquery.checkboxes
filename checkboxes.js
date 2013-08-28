@@ -1,67 +1,77 @@
 /*
- * Checkboxes v1.0.2 - jQuery Plugin
- * https://github.com/dangvanthanh/checkboxes
- * Copyright (c) 2013 Dang Van Thanh
- * Licensed under MIT
- */
+* Checkboxes jQuery Plugin
+* Version: 1.0.3
+* Source: git://github.com/dangvanthanh/checkboxes-jquery-plugin.git
+* Copyright (c) 2013 Dang Van Thanh
+ *Licensed under MIT 
+*/
 (function($) {
 
 	'use strict';
 
 	$.fn.extend({
 		checkboxes: function(options) {
-			// Default options
+			// Default option
 			var defaults = {
-				itemSelect: ''
+				itemChild: ''
 			};
 
 			var option = $.extend(defaults, options);
 
-			return this.each(function() {
-				var obj = option;
-				var $selectAll = $(this);
-				var $itemCheckbox = $('input[name^="' + obj.itemSelect + '"]');
-
-				// Checked All Checkboxes Before Load Page
-				if ($selectAll.is(':checked')) {
-					$itemCheckbox.each(function() {
-							$(this).prop('checked', true);
+			// Checked value function
+			function checkedValue(element, bool) {
+				if (bool) {
+					return element.each(function() {
+						$(this).prop('checked', true);
+					});
+				} else {
+					return element.each(function() {
+						$(this).prop('checked', false);
 					});
 				}
+			}
 
-				// Select All Checkboxes
-				$selectAll.change(function() {
-					var _self = $(this);
+			// Return checked or unchecked
+			return this.each(function() {
+				var obj = option,
+						$itemAll = $(this),
+						$itemChild = $('input[name^="' + obj.itemChild + '"]');
 
-					if (_self.is(':checked')) {
-						$itemCheckbox.each(function() {
-							$(this).prop('checked', true);
-						});
+				// Checked all checkbox before parent checked load page
+				if ($itemAll.is(':checked')) {
+					checkedValue($itemChild, true);
+				}
+
+				// Checked all or unchecked checkbox when parent checkbox checked or unchecked
+				$itemAll.change(function() {
+					var $self = $(this);
+
+					if ($self.is(':checked')) {
+						checkedValue($itemChild, true);
 					} else {
-						$itemCheckbox.each(function() {
-							$(this).prop('checked', false);
-						});
+						checkedValue($itemChild, false);
 					}
 				});
 
-				// Unchecked checkboxes for all select
-				$itemCheckbox.change(function() {
+				// Checked parent checkbox when all child checkbox checked
+				$itemChild.change(function() {
 					var flag = true;
-					var _self = $itemCheckbox;
 
-					if (_self.is(':checked') === false) {
-						$selectAll.prop('checked', false);
+					if (!$itemChild.is(':checked')) {
+						$itemAll.prop('checked', false);
 					}
 
-					_self.each(function() {
-						if ($(this).is(':checked') === false) {
+					$itemChild.each(function() {
+						var $self = $(this);
+						if (!$self.is(':checked')) {
 							flag = false;
 							return;
 						}
 					});
 
-					$selectAll.prop('checked', flag);
+					$itemAll.prop('checked', flag);
 				});
+				
 			});
 		}
 	});
