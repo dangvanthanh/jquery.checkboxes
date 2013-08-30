@@ -1,6 +1,6 @@
 {
   "name": "checkboxes-jquery-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is a jQuery plugin support checked and unchecked multiple checkboxes",
   "main": "checkboxes.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dangvanthanh/checkboxes-jquery-plugin.git"
+    "url": "git@github.com:dangvanthanh/jquery.checkboxes.git"
   },
   "author": "Dang Van Thanh",
   "license": "MIT",

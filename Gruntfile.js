@@ -5,11 +5,11 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*\n* Checkboxes jQuery Plugin\n* Version: <%= pkg.version %>\n* Source: <%= pkg.repository.url %>\n* Copyright (c) 2013 <%= pkg.author %>\n *Licensed under <%= pkg.license %> \n*/\n'
+        banner: '/*\n* Checkboxes jQuery Plugin\n* Copyright (c) 2013 <%= pkg.author %>\n* Version: <%= pkg.version %>\n* Source: <%= pkg.repository.url %>\n *Licensed under <%= pkg.license %> \n*/\n'
       },
       build: {
-        src: 'checkboxes.js',
-        dest: 'checkboxes.min.js'
+        src: 'jquery.checkboxes.js',
+        dest: 'jquery.checkboxes.min.js'
       }
     }
   });

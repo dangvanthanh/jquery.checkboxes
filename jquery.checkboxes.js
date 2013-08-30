@@ -1,8 +1,8 @@
 /*
 * Checkboxes jQuery Plugin
-* Version: 1.0.3
-* Source: git://github.com/dangvanthanh/checkboxes-jquery-plugin.git
 * Copyright (c) 2013 Dang Van Thanh
+* Version: 1.0.4
+* Source: git@github.com:dangvanthanh/jquery.checkboxes.git
  *Licensed under MIT 
 */
 (function($) {

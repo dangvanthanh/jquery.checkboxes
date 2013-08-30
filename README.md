@@ -26,6 +26,7 @@ This is a jQuery plugin support checked and unchecked checkboxes
 	</script>
 
 ## CHANGE LOG
+- v.1.0.4: Change name of checkboxes jQuery
 - v.1.0.3: Modified Checkboxes jQuery
 - v.1.0.2: Using Gruntjs to customize javascript file.
 - v.1.0.1: Validation JSHint	
