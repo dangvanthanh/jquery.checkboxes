@@ -1,8 +1,8 @@
 {
   "name": "checkboxes-jquery-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is a jQuery plugin support checked and unchecked multiple checkboxes",
-  "main": "checkboxes.js",
+  "main": "jquery.checkboxes.min.js",
   "scripts": {
     "build": "npm run lint && uglifyjs src/jquery.checkboxes.js -c -m -o jquery.checkboxes.min.js",
     "lint": "eslint src/*.js"
