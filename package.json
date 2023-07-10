@@ -1,6 +1,6 @@
 {
   "name": "checkboxes-jquery-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is a jQuery plugin support checked and unchecked multiple checkboxes",
   "main": "jquery.checkboxes.min.js",
   "scripts": {
@@ -19,5 +19,12 @@
     "eslint": "^8.44.0",
     "uglify-js": "^3.17.4"
   },
-  "prettier": "@dangvanthanh/prettier-config"
+  "prettier": "@dangvanthanh/prettier-config",
+  "files": [
+    "jquery.checkboxes.min.js",
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
 }

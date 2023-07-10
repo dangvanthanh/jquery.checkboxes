@@ -1,6 +1,6 @@
-# Checkboxes
+# jQuery Checkboxes
 
-**checkboxes.js** is a simple library and jQuery plugin to support checked and unchecked checkboxes.
+**jquery.checkboxes.js** is a simple library and jQuery plugin to support checked and unchecked checkboxes.
 
 ## Usage
 
