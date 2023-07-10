@@ -1,10 +1,11 @@
 {
   "name": "checkboxes-jquery-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a jQuery plugin support checked and unchecked multiple checkboxes",
   "main": "checkboxes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run lint && uglifyjs src/jquery.checkboxes.js -c -m -o jquery.checkboxes.min.js",
+    "lint": "eslint src/*.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,10 @@
   "author": "Dang Van Thanh",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "8775640e0d0bc01be44999f347c3aa26f036721f",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.2"
-  }
+    "@dangvanthanh/prettier-config": "^1.0.0",
+    "eslint": "^8.44.0",
+    "uglify-js": "^3.17.4"
+  },
+  "prettier": "@dangvanthanh/prettier-config"
 }

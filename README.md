@@ -1,32 +1,17 @@
-# Checked and Unchecked Checkboxes
+# Checkboxes
 
-This is a jQuery plugin support checked and unchecked checkboxes
+**checkboxes.js** is a simple library and jQuery plugin to support checked and unchecked checkboxes.
 
-## HTML
+## Usage
 
-	<h3><input type="checkbox" class="selectAll"><span>Select All</span></h3>
-	<ul class="list">
-		<li><input type="checkbox" id="chk01" name="chk01"><span>Item 01</span></li>
-		<li><input type="checkbox" id="chk02" name="chk02"><span>Item 02</span></li>
-		<li><input type="checkbox" id="chk03" name="chk03"><span>Item 03</span></li>
-		<li><input type="checkbox" id="chk04" name="chk04"><span>Item 04</span></li>
-		<li><input type="checkbox" id="chk05" name="chk05"><span>Item 05</span></li>
-	</ul>
+```javascript
+$('#chkAll').checkboxes({ itemChild: 'chk'});
+```
 
-## USE
+## Options
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="checkboxes.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.selectAll').checkboxes({
-				itemSelect: 'chk' // name of all child checkbox
-			});
-		});
-	</script>
+- `itemChild` The name of children checkboxes
 
-## CHANGE LOG
-- v.1.0.4: Change name of checkboxes jQuery
-- v.1.0.3: Modified Checkboxes jQuery
-- v.1.0.2: Using Gruntjs to customize javascript file.
-- v.1.0.1: Validation JSHint	
+## License
+
+MIT © [Dang Van Thanh](https://dangthanh.org)

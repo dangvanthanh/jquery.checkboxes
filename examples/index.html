@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery.checkboxes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  </head>
+  <body>
+    <div class="container mx-auto mt-8">
+      <div class="px-4 sm:px-6 lg:px-8">
+        <div class="ms:flex sm:items-center">
+          <h1 class="text-base font-semibold leading-6 text-gray-900">Users</h1>
+          <p class="mt-2 text-sm text-gray-700">
+            A list of all the users in your account including their name, title,
+            email and role.
+          </p>
+        </div>
+        <div class="mt-8 flow-root">
+          <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div
+              class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
+            >
+              <table class="min-w-full divide-y divide-gray-300">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+                    >
+                      <input type="checkbox" id="chkAll" />
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Name
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Title
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Email
+                    </th>
+                    <th
+                      scope="col"
+                      class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    >
+                      Role
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk01" name="chk01" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Lindsay Walton
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Front-end Developer
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      lindsay.walton@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Member
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk02" name="chk02" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Courtney Henry
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Designer
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      courtney.henry@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Admin
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk03" name="chk03" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Tom Cook
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Director of Product
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      tom.cook@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Member
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk04" name="chk04" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Whitney Francis
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Copywriter
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      whitney.francis@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Admin
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk05" name="chk05" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Leonard Krasner
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Senior Designer
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      leonard.krasner@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Owner
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-0"
+                    >
+                      <input type="checkbox" id="chk06" name="chk06" />
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-900"
+                    >
+                      Floyd Miles
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Principal Designer
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      floyd.miles@example.com
+                    </td>
+                    <td
+                      class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                    >
+                      Member
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../src/jquery.checkboxes.js"></script>
+    <script>
+      $(function () {
+        $("#chkAll").checkboxes({
+            itemChild: "chk",
+        });
+      });
+    </script>
+  </body>
+</html>
